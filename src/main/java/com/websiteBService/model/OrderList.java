@@ -1,24 +1,24 @@
 package com.websiteBService.model;
 
 public class OrderList {
-    private Long orderListId;
+    private Long orderId;
     private Long itemId;
 
     public OrderList(Long orderListId, Long itemId) {
-        this.orderListId = orderListId;
+        this.orderId = orderListId;
         this.itemId = itemId;
     }
 
-    public Long getOrderListId() {
-        return orderListId;
+    public Long getOrderId() {
+        return orderId;
     }
 
     public Long getItemId() {
         return itemId;
     }
 
-    public void setOrderListId(Long orderListId) {
-        this.orderListId = orderListId;
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 
     public void setItemId(Long itemId) {

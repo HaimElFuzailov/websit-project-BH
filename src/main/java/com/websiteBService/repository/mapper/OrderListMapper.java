@@ -11,7 +11,7 @@ public class OrderListMapper implements RowMapper<OrderList> {
     @Override
     public OrderList mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new OrderList(
-                rs.getLong("order_list_id"),
+                rs.getLong("order_id"),
                 rs.getLong("item_id")
         );
     }

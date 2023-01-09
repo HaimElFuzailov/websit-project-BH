@@ -12,7 +12,7 @@ public class OrderListServiceImpl implements OrderListService{
 
     @Override
     public void createOrderList(OrderList orderList) throws Exception {
-        if(orderListRepository.getOrderListById(orderList.getOrderListId()) != null) {
+        if(orderListRepository.getOrderListById(orderList.getOrderId()) != null) {
             orderListRepository.createOrderList(orderList);
         }
         else {

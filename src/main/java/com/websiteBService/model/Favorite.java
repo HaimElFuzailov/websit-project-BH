@@ -2,26 +2,26 @@ package com.websiteBService.model;
 
 public class Favorite {
     private Long id;
-    private Long itemId;
+    private Long userId;
 
-    public Favorite(Long id, Long itemId) {
+    public Favorite(Long id, Long userId) {
         this.id = id;
-        this.itemId = itemId;
+        this.userId = userId;
     }
 
     public Long getId() {
         return id;
     }
 
-    public Long getItemId() {
-        return itemId;
+    public Long getUserId() {
+        return userId;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

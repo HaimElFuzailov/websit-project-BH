@@ -11,7 +11,7 @@ public class FavoriteMapper implements RowMapper<Favorite> {
     public Favorite mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new Favorite(
                 rs.getLong("favorite_id"),
-                rs.getLong("item")
+                rs.getLong("user_id")
         );
     }
 }

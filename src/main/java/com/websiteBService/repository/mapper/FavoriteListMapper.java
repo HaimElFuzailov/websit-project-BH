@@ -11,7 +11,7 @@ public class FavoriteListMapper implements RowMapper<FavoriteList> {
     @Override
     public FavoriteList mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new FavoriteList(
-                rs.getLong("favorite_list_id"),
+                rs.getLong("favorite_id"),
                 rs.getLong("item_id")
         );
     }

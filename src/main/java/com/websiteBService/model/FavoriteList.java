@@ -1,24 +1,24 @@
 package com.websiteBService.model;
 
 public class FavoriteList {
-    private Long favoriteListId;
+    private Long favoriteId;
     private Long itemId;
 
-    public FavoriteList(Long favoriteListId, Long itemId) {
-        this.favoriteListId = favoriteListId;
+    public FavoriteList(Long favoriteId, Long itemId) {
+        this.favoriteId = favoriteId;
         this.itemId = itemId;
     }
 
-    public Long getFavoriteListId() {
-        return favoriteListId;
+    public Long getFavoriteId() {
+        return favoriteId;
     }
 
     public Long getItemId() {
         return itemId;
     }
 
-    public void setFavoriteListId(Long favoriteListId) {
-        this.favoriteListId = favoriteListId;
+    public void setFavoriteId(Long favoriteId) {
+        this.favoriteId = favoriteId;
     }
 
     public void setItemId(Long itemId) {

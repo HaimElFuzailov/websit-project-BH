@@ -11,7 +11,7 @@ public class FavoriteListServiceImpl implements FavoriteListService{
     FavoriteListRepository favoriteListRepository;
     @Override
     public void createFavoriteList(FavoriteList favoriteList) throws Exception {
-        if(favoriteListRepository.getFavoriteListById(favoriteList.getFavoriteListId()) != null) {
+        if(favoriteListRepository.getFavoriteListById(favoriteList.getFavoriteId()) != null) {
             favoriteListRepository.createFavoriteList(favoriteList);
         }
         else {

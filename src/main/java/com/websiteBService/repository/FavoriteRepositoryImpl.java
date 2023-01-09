@@ -17,14 +17,14 @@ public class FavoriteRepositoryImpl implements FavoriteRepository {
 
     @Override
     public void createFavorite(Favorite favorite) {
-        String sql = "INSERT INTO " + FAVORITE_TABLE_NAME + " (favorite_id ,item_id ) VALUES (?,?)";
-        jdbcTemplate.update(sql,favorite.getId(),favorite.getItemId());
+        String sql = "INSERT INTO " + FAVORITE_TABLE_NAME + " (favorite_id ,user_id ) VALUES (?,?)";
+        jdbcTemplate.update(sql,favorite.getId(),favorite.getUserId());
     }
 
     @Override
     public void updateFavoriteById(Long id, Favorite favorite) throws Exception {
-        String sql = "UPDATE " + FAVORITE_TABLE_NAME + " SET favorite_id=? ,item_id=?" + "WHERE id=?";
-        jdbcTemplate.update(sql,favorite.getId(),favorite.getItemId());
+        String sql = "UPDATE " + FAVORITE_TABLE_NAME + " SET favorite_id=? ,user_id=?" + "WHERE id=?";
+        jdbcTemplate.update(sql,favorite.getId(),favorite.getUserId());
 
     }
 
