@@ -1,11 +1,15 @@
 package com.websiteBService.repository;
 
 import com.websiteBService.model.Item;
+import com.websiteBService.model.UserOrder;
 import com.websiteBService.repository.mapper.ItemMapper;
+import com.websiteBService.repository.mapper.UserOrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 class ItemRepositoryImpl implements ItemRepository{
@@ -40,6 +44,18 @@ class ItemRepositoryImpl implements ItemRepository{
         String sql = "SELECT * FROM " + ITEM_TABLE_NAME + " WHERE id=?";
         try {
             return jdbcTemplate.queryForObject(sql, new ItemMapper(), id);
+        } catch (EmptyResultDataAccessException error){
+            return null;
+        }
+    }
+
+
+
+    @Override
+    public List<Item> getAllItems(Long id) {
+        String sql = "SELECT * FROM " + ITEM_TABLE_NAME + " WHERE id=?";
+        try {
+            return jdbcTemplate.query(sql, new ItemMapper(), id);
         } catch (EmptyResultDataAccessException error){
             return null;
         }

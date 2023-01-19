@@ -2,6 +2,8 @@ package com.websiteBService.repository;
 
 import com.websiteBService.model.Item;
 
+import java.util.List;
+
 
 public interface ItemRepository {
 
@@ -13,4 +15,6 @@ public interface ItemRepository {
     void deleteItemById(Long id) throws Exception;
 
     Item getItemById(Long id);
+
+    List<Item> getAllItems(Long id);
 }

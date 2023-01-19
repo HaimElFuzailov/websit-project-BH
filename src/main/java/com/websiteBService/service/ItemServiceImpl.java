@@ -5,6 +5,8 @@ import com.websiteBService.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ItemServiceImpl implements ItemService{
 
@@ -35,5 +37,7 @@ public class ItemServiceImpl implements ItemService{
     public Item getItemById(Long id) {
         return itemRepository.getItemById(id);
     }
+    @Override
+    public List<Item> getAllItems(Long id) { return itemRepository.getAllItems(id); }
 
 }
