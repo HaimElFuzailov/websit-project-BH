@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 8090
 
 spring:
   datasource:
     url: jdbc:h2:mem:mydb
     username: sa
-    password: password
+    password:
     driverClassName: org.h2.Driver
   jpa:
     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
@@ -13,16 +13,4 @@ spring:
     console:
       enabled: true
 
-externalApi:
-  tvMaze:
-    url: https://api.tvmaze.com
-  lastFM:
-    url: http://ws.audioscrobbler.com/2.0
-  customerService:
-    url: localhost:8082
-
-redis:
-  host: localhost
-  port: 6380
-  ttl: 1000
 

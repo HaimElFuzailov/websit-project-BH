@@ -38,6 +38,6 @@ public class ItemServiceImpl implements ItemService{
         return itemRepository.getItemById(id);
     }
     @Override
-    public List<Item> getAllItems(Long id) { return itemRepository.getAllItems(id); }
+    public List<Item> getAllItems() { return itemRepository.getAllItems(); }
 
 }

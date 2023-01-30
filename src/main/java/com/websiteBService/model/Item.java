@@ -4,14 +4,14 @@ public class Item {
     private Long id;
     private String titleOfTheItem;
     private String photoOfTheItem;
-    private Long priceInUsd;
+    private Long price;
     private Long howMuchItemsAvailableInStock;
 
     public Item(Long id, String titleOfTheItem, String photoOfTheItem, Long priceInUsd, Long howMuchItemsAvailableInStock) {
         this.id = id;
         this.titleOfTheItem = titleOfTheItem;
         this.photoOfTheItem = photoOfTheItem;
-        this.priceInUsd = priceInUsd;
+        this.price = priceInUsd;
         this.howMuchItemsAvailableInStock = howMuchItemsAvailableInStock;
     }
 
@@ -29,8 +29,8 @@ public class Item {
         return photoOfTheItem;
     }
 
-    public Long getPriceInUsd() {
-        return priceInUsd;
+    public Long getPrice() {
+        return price;
     }
 
     public Long getHowMuchItemsAvailableInStock() {

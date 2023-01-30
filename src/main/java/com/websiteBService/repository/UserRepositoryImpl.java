@@ -19,8 +19,8 @@ public class UserRepositoryImpl implements UserRepository {
 
         @Override
         public void createUser(User user) {
-            String sql = "INSERT INTO " + USER_SIGN_TABLE_NAME + " (first_name, last_name, email, phone, address ) VALUES (?, ?, ?, ?, ?)";
-            jdbcTemplate.update(sql, user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone(), user.getAddress());
+            String sql = "INSERT INTO " + USER_SIGN_TABLE_NAME + " (user_name, password, first_name, last_name, email, phone, address ) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            jdbcTemplate.update(sql, user.getUserName(), user.getPassword(),user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone(), user.getAddress());
         }
 
     @Override
@@ -36,9 +36,9 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void updateUserById(Long userId, User user) throws Exception {
-        String sql = "UPDATE " + USER_SIGN_TABLE_NAME + " SET first_name=?, last_name=?, email=?, phone=?, address=? " +
+        String sql = "UPDATE " + USER_SIGN_TABLE_NAME + " SET user_name=?, password=?, first_name=?, last_name=?, email=?, phone=?, address=? " +
                 "WHERE user_id=?";
-        jdbcTemplate.update(sql,user.getId(),user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone(), user.getAddress());
+        jdbcTemplate.update(sql,user.getUserName(), user.getPassword(),user.getId(),user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone(), user.getAddress());
     }
 
     @Override

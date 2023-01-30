@@ -14,5 +14,7 @@ public interface ItemService {
 
     void createItem(Item item)throws Exception;
 
-    List<Item> getAllItems(Long id);
+    List<Item> getAllItems();
+
+
 }

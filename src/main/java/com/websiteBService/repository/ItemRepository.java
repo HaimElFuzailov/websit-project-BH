@@ -16,5 +16,5 @@ public interface ItemRepository {
 
     Item getItemById(Long id);
 
-    List<Item> getAllItems(Long id);
+    List<Item> getAllItems();
 }
