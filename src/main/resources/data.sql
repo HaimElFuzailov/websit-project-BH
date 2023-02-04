@@ -60,17 +60,17 @@ CREATE TABLE order_list(
 
 
 INSERT INTO item ( title_of_the_item, photo_of_the_item, price, how_much_items_available_in_stock)
-VALUES ('Instant Tent For 8 People From Home Coleman Design!!', './FinalProject/images/green.jpg',400,99),
-('Supernova 8 large instant tent from Aztec Design!!', './FinalProject/images/black.jpg',400,90),
-('Coffee set COFFEE BREAK I from azte', './FinalProject/images/COFFEE-BREAK.jpg',80,78),
-('Amigo coffee set from Go Nature', './FinalProject/images/COFFEE-BREAK2.jpg',70,170),
-('Alpine coffee set VOLCANO', './FinalProject/images/COFFEE-BREAK3.jpg',60,100),
-('Outdoor Fire Light coffee set', './FinalProject/images/COFFEE-BREAK4.jpg',50,109),
-('Mens micro-fleece shirt Micro-Hati from AZTEC', './FinalProject/images/suitcase-backpack.jpg',200,120),
-('Columbia TITAN PASS 2.0 II M microfleece jacket for men', './FinalProject/images/suitcase-backpack2.jpg',250,200),
-('Columbia Titan Ridge 3.0 Hybrid Mens Softshell', './FinalProject/images/suitcase-backpack3.jpg',200,250),
-('Set Sail in the Atlantic Ocean visiting Uncharted Waters', './FinalProject/images/Microfleece-shirt.jpg',40,140),
-('Experience Football on Top of the Himilayan Mountains', './FinalProject/images/Microfleece-shirt2.jpg',20,105),
-('Ride through the Sahara Desert on a guided camel tour', './FinalProject/images/Microfleece-shirt3.jpg',30,160);
+VALUES ('Instant Tent For 8 People From Home Coleman Design!!', '../images/green.jpg',400,99),
+('Supernova 8 large instant tent from Aztec Design!!', '../images/black.jpg',400,90),
+('Tent for three Outdoor Mountain 3-season tent is designed for three people', '../images/COFFEE-BREAK.jpg',350,78),
+('Amigo coffee set from Go Nature', '../images/COFFEE-BREAK2.jpg',70,170),
+('Alpine coffee set VOLCANO', '../images/COFFEE-BREAK3.jpg',60,100),
+('Outdoor Fire Light coffee set', '../images/COFFEE-BREAK4.jpg',50,109),
+('Mens micro-fleece shirt Micro-Hati from AZTEC', '../images/suitcase-backpack.jpg',200,120),
+('Columbia TITAN PASS 2.0 II M microfleece jacket for men', '../images/suitcase-backpack-2.jpg',250,200),
+('Columbia Titan Ridge 3.0 Hybrid Mens Softshell', '../images/suitcase-backpack3.jpg',200,250),
+('Set Sail in the Atlantic Ocean visiting Uncharted Waters', '../images/Microfleece-shirt.jpg',40,140),
+('Experience Football on Top of the Himilayan Mountains', '../images/Microfleece-shirt2.jpg',20,105),
+('Ride through the Sahara Desert on a guided camel tour', '../images/Microfleece-shirt3.jpg',30,160);
 
 

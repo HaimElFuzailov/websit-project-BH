@@ -7,11 +7,11 @@ public class Item {
     private Long price;
     private Long howMuchItemsAvailableInStock;
 
-    public Item(Long id, String titleOfTheItem, String photoOfTheItem, Long priceInUsd, Long howMuchItemsAvailableInStock) {
+    public Item(Long id, String titleOfTheItem, String photoOfTheItem, Long price, Long howMuchItemsAvailableInStock) {
         this.id = id;
         this.titleOfTheItem = titleOfTheItem;
         this.photoOfTheItem = photoOfTheItem;
-        this.price = priceInUsd;
+        this.price = price;
         this.howMuchItemsAvailableInStock = howMuchItemsAvailableInStock;
     }
 

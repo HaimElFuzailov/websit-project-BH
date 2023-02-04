@@ -14,7 +14,7 @@ public class ItemMapper implements RowMapper<Item> {
                 rs.getLong("item_id"),
                 rs.getString("title_of_the_item"),
                 rs.getString("photo_of_the_item"),
-                rs.getLong("price_in_usd"),
+                rs.getLong("price"),
                 rs.getLong("how_much_items_available_in_stock")
         );
     }
